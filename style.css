@@ -26,6 +26,10 @@ a {
 	display: block;
 }
 
+.green__text {
+	color: #1f8e30;
+}
+
 .menu {
 	display: flex;
 	justify-content: center;
@@ -57,7 +61,7 @@ a {
 }
 
 .logo__title {
-	margin-right: 16px;
+	margin-left: 40px;
 	font-size: 28px;
 }
 
@@ -89,4 +93,88 @@ address {
 .number {
 	font-size: 22px;
 	font-weight: bold;
+}
+
+.mail {
+	text-decoration: underline;
+}
+
+.container {
+	width: 100%;
+	height: 609px;
+	border: 1px solid #8a8a8a;
+	background-image: url(/images/bg.png);
+	background-position: 380px 0px;
+	background-repeat: no-repeat;
+	background-size: 1070px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	margin-left: -120px;
+	margin-top: 14px;
+	max-width: 600px;
+	flex-direction: column;
+}
+
+.content__title {
+	line-height: 38px;
+}
+
+.content__subtitle {
+	padding: 30px 0;
+}
+
+.content__list {
+	font-size: 16px;
+	margin-left: 62px;
+}
+
+.content__list__item {
+	margin-bottom: 0px;
+	line-height: 19px;
+}
+
+.content__list__item:nth-child(1) {
+	margin-top: -24px;
+}
+
+.list__first {
+	position: relative;
+	left: -73px;
+	top: 40px;
+	font-size: 34px;
+}
+
+.marker {
+	position: relative;
+	height: 20px;
+	z-index: 100;
+	left: -63px;
+	top: 38px;
+}
+
+.list__second {
+	position: relative;
+	left: -73px;
+	top: 40px;
+	font-size: 34px;
+}
+
+.btn {
+	position: relative;
+	left: -150px;
+	top: 85px;
+	height: 140px;
+	width: 140px;
+	font-weight: bold;
+	color: white;
+	border: 0px;
+	background-color: #1f8e30;
+	border-radius: 100px;
+	& > a {
+		color: white;
+	}
 }
