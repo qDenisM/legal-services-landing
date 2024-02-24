@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Exo 2';
+	font-weight: 400;
+	font-size: 20px;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4px;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+	width: 1000px;
+	font-size: 14px;
+}
+
+.submenu__list {
+	display: flex;
+	gap: 15px;
+	width: 242px;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 500px;
+}
+
+.logo__title {
+	margin-right: 16px;
+	font-size: 28px;
+}
+
+.logo__text {
+	margin-right: 0px;
+	font-size: 14px;
+	width: 170px;
+	line-height: 17px;
+	margin-top: 10px;
+}
+
+.questions__icons {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	width: 236px;
+}
+
+.questions {
+	line-height: 17px;
+}
+
+address {
+	font-style: normal;
+	text-align: right;
+	width: 220px;
+}
+
+.number {
+	font-size: 22px;
+	font-weight: bold;
+}
