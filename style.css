@@ -34,14 +34,15 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 4px;
+	padding-top: 4px;
+	padding-bottom: 10px;
 }
 
 .menu__list {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 15px;
+	gap: 19px;
 	width: 1000px;
 	font-size: 14px;
 }
@@ -66,11 +67,10 @@ a {
 }
 
 .logo__text {
-	margin-right: 0px;
 	font-size: 14px;
 	width: 170px;
-	line-height: 17px;
-	margin-top: 10px;
+	line-height: 14px;
+	margin-top: 4px;
 }
 
 .questions__icons {
@@ -87,6 +87,7 @@ a {
 address {
 	font-style: normal;
 	text-align: right;
+
 	width: 220px;
 }
 
@@ -100,21 +101,20 @@ address {
 }
 
 .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	height: 609px;
+	height: 610px;
 	border: 1px solid #8a8a8a;
 	background-image: url(/images/bg.png);
 	background-position: 380px 0px;
 	background-repeat: no-repeat;
 	background-size: 1070px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .content {
-	margin-left: -120px;
-	margin-top: 14px;
+	margin-left: -110px;
 	max-width: 600px;
 	flex-direction: column;
 }
@@ -185,6 +185,7 @@ address {
 	align-items: center;
 	flex-flow: row wrap;
 	gap: 30px;
+	margin-bottom: 70px;
 }
 
 .my_team__title {
@@ -228,4 +229,125 @@ address {
 .my_team__our_pict img {
 	height: 460px;
 	border-radius: 5px, 5px, 0px, 0px;
+}
+
+.administration__help_form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0.5px solid #8a8a8a;
+	height: 530px;
+	background-image: url(/images/bg_help_form.jpg);
+	background-size: 1530px;
+	background-repeat: no-repeat;
+}
+
+.administration_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	width: 876px;
+	margin-top: -65px;
+}
+
+.administration__card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 15px;
+	width: 250px;
+	height: 450px;
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #d9d9d9;
+}
+
+.administration__image img {
+	height: 220px;
+}
+
+.administration__name {
+	font-size: 18px;
+}
+
+.administration__desc {
+	font-size: 16px;
+}
+
+.help_form {
+	margin-top: 50px;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 450px;
+	background-color: #ffffff;
+	border: 1px solid #d9d9d9;
+}
+
+.help_form__title {
+	text-align: center;
+	font-size: 16px;
+	padding: 30px 10px 10px 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+form > label {
+	font-size: 14px;
+}
+
+label > input {
+	border: 1px solid #ababab;
+	background-color: #ffffff;
+	width: 270px;
+	height: 50px;
+	padding: 20px 15px;
+	border-radius: 4px;
+	margin: 5px 0px 0px 0px;
+}
+
+label > input::placeholder {
+	color: #cdcdcd;
+}
+
+.help_form__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+}
+
+.help_form__button button {
+	width: 270px;
+	height: 50px;
+	padding: 10px, 0px;
+	background-color: #1f8e30;
+	border: 0px;
+	border-radius: 5px;
+	& > a {
+		color: #ffffff;
+		font-size: 16px;
+	}
+}
+
+.help_form__agree_desc {
+	font-size: 10px;
+}
+
+.help_form__agree_desc {
+	text-align: center;
+	width: 270px;
 }
