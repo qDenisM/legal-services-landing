@@ -236,7 +236,7 @@ address {
 	justify-content: center;
 	align-items: center;
 	border: 0.5px solid #8a8a8a;
-	height: 530px;
+	height: 525px;
 	background-image: url(/images/bg_help_form.jpg);
 	background-size: 1530px;
 	background-repeat: no-repeat;
@@ -247,7 +247,7 @@ address {
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
-	width: 876px;
+	width: 875px;
 	margin-top: -65px;
 }
 
@@ -350,4 +350,141 @@ label > input::placeholder {
 .help_form__agree_desc {
 	text-align: center;
 	width: 270px;
+}
+
+.contacts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 620px;
+}
+
+.contacts__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 875px;
+	gap: 10px;
+}
+
+.contacts__info {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: left;
+	gap: 20px;
+	max-width: 50%;
+}
+
+.contacts__info_title {
+	font-size: 32px;
+}
+
+.contacts__info_numbers {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 5px;
+	text-align: left;
+	& > span {
+		font-size: 16px;
+	}
+	& > a {
+		font-weight: bold;
+		font-size: 24px;
+		min-width: 300px;
+		& > img {
+			height: 16px;
+		}
+	}
+}
+
+.contacts__info_address {
+	max-width: 315px;
+	font-size: 16px;
+	& > p {
+		margin-top: 8px;
+	}
+}
+
+.contacts__info_metro-way {
+	font-size: 16px;
+	background-color: #fafafa;
+	max-width: 320px;
+	padding: 10px 20px;
+	& > .contacts__info_metro-way_list {
+		padding-left: 25px;
+		& > .metro-way_list-item-green {
+			list-style-image: url(./images/green-marker.png);
+			padding: 0px 8px;
+		}
+		& > .metro-way_list-item-orange {
+			list-style-image: url(./images/orange-marker.png);
+			padding: 0px 8px;
+		}
+		& > .metro-way_list-item-gray {
+			list-style-image: url(./images/gray-marker.png);
+			padding: 0px 8px;
+		}
+		& > .metro-way_list-item-exit {
+			background-image: url(./images/exit-marker.png);
+			background-repeat: no-repeat;
+			background-position: 0px 3px;
+			margin-left: -15px;
+			padding-left: 22px;
+		}
+	}
+}
+
+.contacts__info_email {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-size: 16px;
+	padding-top: 14px;
+	text-align: left;
+	& > a {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
+
+.contacts__info_call-with-me {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 16px;
+	width: 500px;
+	& > .contacts__info_call-with-me__tg {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		width: 190px;
+		& > a {
+			color: #168fc0;
+		}
+	}
+	& > .contacts__info_call-with-me__whatsapp {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		width: 190px;
+		& > a {
+			color: #2db475;
+		}
+	}
+}
+
+.contacts__map {
+	text-align: center;
+	font-size: 16px;
+	height: 520px;
+	max-width: 50%;
+	& > p {
+		margin-top: 12px;
+	}
+	& > img {
+		height: 220px;
+		width: 100%;
+	}
 }
