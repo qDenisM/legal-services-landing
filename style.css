@@ -36,6 +36,7 @@ a {
 	align-items: center;
 	padding-top: 4px;
 	padding-bottom: 10px;
+	border-bottom: 1px solid #8a8a8a;
 }
 
 .menu__list {
@@ -43,22 +44,32 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	gap: 19px;
-	width: 1000px;
+	max-width: 1000px;
 	font-size: 14px;
 }
 
 .submenu__list {
 	display: flex;
 	gap: 15px;
-	width: 242px;
+	width: 250px;
 	align-items: center;
+}
+
+.submenu__link:hover {
+	color: #827e7d;
+	transition: 0.3s;
+}
+
+.submenu__link:not(:hover) {
+	color: #000;
+	transition: 0.3s;
 }
 
 .logo {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 500px;
+	gap: 15px;
 }
 
 .logo__title {
@@ -76,28 +87,83 @@ a {
 .questions__icons {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	flex-direction: row;
 	gap: 7px;
-	width: 236px;
+	width: 220px;
 }
 
 .questions {
 	line-height: 17px;
+	width: 100px;
+}
+
+.icons {
+	display: flex;
+	gap: 5px;
+}
+
+.telegram-hover:hover circle {
+	fill: #45a5cd;
+	transition: 0.3s;
+}
+
+.telegram-hover:not(:hover) circle {
+	fill: #168fc0;
+	transition: 0.3s;
+}
+
+.telegram-hover:active circle {
+	fill: #12729a;
+}
+
+.whats-app-hover:hover circle {
+	fill: #57c391;
+	transition: 0.3s;
+}
+
+.whats-app-hover:not(:hover) circle {
+	fill: #2db475;
+	transition: 0.3s;
+}
+
+.whats-app-hover:active circle {
+	fill: #24905e;
+}
+
+.whats-app-hover:not(:hover) {
+	color: #421414;
 }
 
 address {
 	font-style: normal;
 	text-align: right;
-
 	width: 220px;
 }
 
 .number {
 	font-size: 22px;
 	font-weight: bold;
+	&:hover {
+		color: #827e7d;
+		transition: 0.3s;
+	}
+	&:not(:hover) {
+		color: #000;
+		transition: 0.3s;
+	}
 }
 
 .mail {
 	text-decoration: underline;
+	&:hover {
+		color: #827e7d;
+		transition: 0.3s;
+	}
+	&:not(:hover) {
+		color: #000;
+		transition: 0.3s;
+	}
 }
 
 .container {
@@ -106,8 +172,6 @@ address {
 	align-items: center;
 	width: 100%;
 	height: 610px;
-	border-top: 1px solid #8a8a8a;
-	border-bottom: 1px solid #8a8a8a;
 	background-image: url(/images/bg.png);
 	background-position: 380px 0px;
 	background-repeat: no-repeat;
@@ -175,8 +239,34 @@ address {
 	border: 0px;
 	background-color: #1f8e30;
 	border-radius: 100px;
+	cursor: pointer;
 	& > a {
 		color: white;
+	}
+	&:hover {
+		background-color: #4ba55b;
+		transition: 0.3s;
+	}
+	&:not(:hover) {
+		background-color: #1f8e30;
+		transition: 0.3s;
+	}
+	&:active {
+		background-color: #187228;
+	}
+}
+
+.btn-hover {
+	&:hover {
+		background-color: #4ba55b;
+		transition: 0.3s;
+	}
+	&:not(:hover) {
+		background-color: #1f8e30;
+		transition: 0.3s;
+	}
+	&:active {
+		background-color: #187228;
 	}
 }
 
@@ -236,8 +326,6 @@ address {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 0.5px solid #8a8a8a;
-	border-top: 0.5px solid #8a8a8a;
 	height: 525px;
 	background-image: url(/images/bg_help_form.jpg);
 	background-size: 1530px;
@@ -308,7 +396,7 @@ address {
 	padding: 30px 10px 10px 10px;
 }
 
-form {
+.help_form__info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -316,11 +404,11 @@ form {
 	gap: 10px;
 }
 
-form > label {
+.help_form__info > .help_form__info_desc {
 	font-size: 14px;
 }
 
-label > input {
+.help_form__info_desc > input {
 	border: 1px solid #ababab;
 	background-color: #ffffff;
 	width: 270px;
@@ -330,7 +418,7 @@ label > input {
 	margin: 5px 0px 0px 0px;
 }
 
-label > input::placeholder {
+.help_form__info_desc > input::placeholder {
 	color: #cdcdcd;
 }
 
@@ -348,10 +436,9 @@ label > input::placeholder {
 	background-color: #1f8e30;
 	border: 0px;
 	border-radius: 5px;
-	& > a {
-		color: #ffffff;
-		font-size: 16px;
-	}
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
 }
 
 .help_form__agree_desc {
@@ -369,6 +456,8 @@ label > input::placeholder {
 	align-items: center;
 	height: 620px;
 	margin-bottom: 30px;
+	background-image: url(./images/contacts_bg.jpg);
+	background-repeat: no-repeat;
 }
 
 .contacts__container {
@@ -474,6 +563,17 @@ label > input::placeholder {
 		width: 190px;
 		& > a {
 			color: #168fc0;
+			&:hover {
+				color: #45a5cd;
+				transition: 0.3s;
+			}
+			&:active {
+				color: #12729a;
+			}
+			&:not(:hover) {
+				color: #168fc0;
+				transition: 0.3s;
+			}
 		}
 	}
 	& > .contacts__info_call-with-me__whatsapp {
@@ -483,6 +583,17 @@ label > input::placeholder {
 		width: 190px;
 		& > a {
 			color: #2db475;
+			&:hover {
+				color: #57c391;
+				transition: 0.3s;
+			}
+			&:active {
+				color: #24905e;
+			}
+			&:not(:hover) {
+				color: #2db475;
+				transition: 0.3s;
+			}
 		}
 	}
 }
@@ -512,4 +623,174 @@ label > input::placeholder {
 	width: 100%;
 	height: 60px;
 	font-size: 12px;
+}
+
+.quiz {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 250px;
+	height: 630px;
+	max-width: 100%;
+}
+
+.quiz__container {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	flex-direction: column;
+	width: 500px;
+	height: 500px;
+}
+
+.quiz__gray-bar {
+	width: 100%;
+	background-color: #d9d9d9;
+	border-radius: 5px;
+}
+
+.quiz__green-bar {
+	width: 20%;
+	height: 5px;
+	border-radius: 5px;
+	background-color: #1e8e31;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}
+
+.quiz__question-number {
+	display: block;
+	top: -30px;
+	position: relative;
+	font-size: 14px;
+	color: black;
+}
+
+.quiz__container_title {
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+
+.quiz__menu {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	font-size: 16px;
+}
+
+.quiz__menu_item__radio {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	&:checked + .quiz__menu_item__answer {
+		font-weight: bold;
+	}
+	& + .quiz__menu_item__answer {
+		display: inline-flex;
+		align-items: center;
+		user-select: none;
+	}
+
+	& + .quiz__menu_item__answer::before {
+		content: '';
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		border: 1px solid #adb5bd;
+		border-radius: 50%;
+		margin-right: 0.5em;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50% 50%;
+	}
+
+	&:not(:disabled):not(:checked) + .quiz__menu_item__answer:hover::before {
+		border-color: #b3d7ff;
+	}
+
+	&:not(:disabled):active + .quiz__menu_item__answer::before {
+		background-color: #b3d7ff;
+		border-color: #b3d7ff;
+	}
+
+	&:focus + .quiz__menu_item__answer::before {
+		box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+	}
+
+	&:focus:not(:checked) + .quiz__menu_item__answer::before {
+		border-color: #80bdff;
+	}
+
+	&:checked + .quiz__menu_item__answer::before {
+		border-color: #0b76ef;
+		background-image: url('./images/radio.svg');
+	}
+
+	&:disabled + .quiz__menu_item__answer::before {
+		background-color: #e9ecef;
+	}
+}
+
+.quiz__buttons {
+	display: flex;
+	gap: 20px;
+	margin-top: 30px;
+	margin-left: 70px;
+	font-size: 14px;
+}
+
+.quiz__buttons_next {
+	color: #fff;
+	padding: 12px 17px;
+	background-color: #1e8e31;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	&:hover {
+		filter: brightness(120%);
+		transition: 0.3s;
+	}
+	&:not(:hover) {
+		filter: brightness(100%);
+		transition: 0.3s;
+	}
+	&:active {
+		filter: grayscale(30%);
+	}
+}
+
+.quiz__buttons_skip {
+	color: #9b9b9b;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+	&:hover {
+		filter: brightness(110%);
+		transition: 0.3s;
+	}
+	&:not(:hover) {
+		filter: brightness(100%);
+		transition: 0.3s;
+	}
+	&:active {
+		filter: grayscale(100%);
+	}
+}
+
+.quiz__advantages {
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+	gap: 15px;
+}
+
+.quiz__advantages_card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	padding: 15px;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
 }
