@@ -4,8 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Оказание юридических услуг</title>
-		<link rel="icon" href="https://polotnos.cdnbro.com/posts/0732688-notarius-klipart-55.jpg">
-		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="icon"
+			href="https://polotnos.cdnbro.com/posts/0732688-notarius-klipart-55.jpg"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -13,16 +16,22 @@
 			rel="stylesheet"
 		/>
 	</head>
+	<script defer src="burger.js"></script>
 	<body>
 		<header class="header">
 			<div class="menu">
+				<div class="logo">
+					<h1 class="logo__title">URNEFP</h1>
+					<span class="logo__text">
+						Управление по развитию новых экономических форм производства
+					</span>
+				</div>
+				<button class="header__burger-btn" id="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 				<ul class="menu__list">
-					<li class="menu__item logo">
-						<h1 class="logo__title">URNEFP</h1>
-						<span class="logo__text">
-							Управление по развитию новых экономических форм производства
-						</span>
-					</li>
 					<li class="menu__item">
 						<ul class="submenu__list">
 							<li class="submenu__item">
@@ -37,32 +46,95 @@
 						</ul>
 					</li>
 					<li class="menu__item questions__icons">
-						<div class="questions">Есть вопросы?<br><b>Мы онлайн</b></div>
-							<div class="icons"><?xml version="1.0" standalone="no"?>
-							<a class="telegram-hover" href="">
-								<svg width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="15" cy="15" r="15" fill="#168FC0"/>
+						<div class="questions">Есть вопросы?  <b>Мы онлайн</b></div>
+						<div class="icons">
+							<?xml version="1.0" standalone="no"?>
+							<a
+								class="telegram-hover"
+								href="https://t.me/TLGRM_belstuby"
+								target="_blank"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 30 30"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle cx="15" cy="15" r="15" fill="#168FC0" />
 									<g clip-path="url(#clip0_0_902)">
-									<mask id="mask0_0_902" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="7" width="16" height="16">
-									<path d="M6.74976 7.5H21.7498V22.5H6.74976V7.5Z" fill="white"/>
-									</mask>
-									<g mask="url(#mask0_0_902)">
-									<path d="M20.3622 9.1732L7.66541 14.02C7.02137 14.2658 7.03198 14.6379 7.68887 14.8468L10.5414 15.663L12.0407 19.9508C12.2683 20.6015 12.8693 20.7518 13.3764 20.2849L15.284 18.5285L17.9648 20.6871C18.5095 21.1096 19.067 20.9024 19.2039 20.2269L21.2842 9.95455C21.4211 9.27902 21.0062 8.92746 20.3622 9.1732Z" stroke="white" stroke-width="0.878906" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-									<path d="M10.5798 15.6438L18.2207 11.7402L13.3201 16.9475L12.4531 20.459" stroke="white" stroke-width="0.878906" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-									<path d="M13.3435 16.9652L17.9419 20.668" stroke="white" stroke-width="0.878906" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-									</g>
+										<mask
+											id="mask0_0_902"
+											style="mask-type: luminance"
+											maskUnits="userSpaceOnUse"
+											x="6"
+											y="7"
+											width="16"
+											height="16"
+										>
+											<path
+												d="M6.74976 7.5H21.7498V22.5H6.74976V7.5Z"
+												fill="white"
+											/>
+										</mask>
+										<g mask="url(#mask0_0_902)">
+											<path
+												d="M20.3622 9.1732L7.66541 14.02C7.02137 14.2658 7.03198 14.6379 7.68887 14.8468L10.5414 15.663L12.0407 19.9508C12.2683 20.6015 12.8693 20.7518 13.3764 20.2849L15.284 18.5285L17.9648 20.6871C18.5095 21.1096 19.067 20.9024 19.2039 20.2269L21.2842 9.95455C21.4211 9.27902 21.0062 8.92746 20.3622 9.1732Z"
+												stroke="white"
+												stroke-width="0.878906"
+												stroke-miterlimit="10"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												d="M10.5798 15.6438L18.2207 11.7402L13.3201 16.9475L12.4531 20.459"
+												stroke="white"
+												stroke-width="0.878906"
+												stroke-miterlimit="10"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												d="M13.3435 16.9652L17.9419 20.668"
+												stroke="white"
+												stroke-width="0.878906"
+												stroke-miterlimit="10"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</g>
 									</g>
 									<defs>
-									<clipPath id="clip0_0_902">
-									<rect width="15" height="15" fill="white" transform="translate(6.75 7.5)"/>
-									</clipPath>
+										<clipPath id="clip0_0_902">
+											<rect
+												width="15"
+												height="15"
+												fill="white"
+												transform="translate(6.75 7.5)"
+											/>
+										</clipPath>
 									</defs>
 								</svg>
 							</a>
-							<a class="whats-app-hover" href="">
-								<svg width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="15" cy="15" r="15" fill="#2DB475"/>
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M19.6738 9.58083C18.3342 8.2397 16.5527 7.50079 14.6548 7.5C10.744 7.5 7.56109 10.6828 7.55951 14.5947C7.55899 15.8452 7.88567 17.0659 8.5066 18.1419L7.5 21.8185L11.2613 20.8318C12.2977 21.3972 13.4645 21.6951 14.6519 21.6955H14.6549C18.5653 21.6955 21.7485 18.5124 21.75 14.6004C21.7508 12.7044 21.0135 10.9219 19.6738 9.58083ZM14.6548 20.4972H14.6524C13.5942 20.4968 12.5564 20.2124 11.6508 19.6752L11.4356 19.5473L9.20356 20.1329L9.79932 17.9567L9.65905 17.7336C9.06871 16.7946 8.75698 15.7094 8.7575 14.5951C8.75873 11.3436 11.4043 8.69834 14.6572 8.69834C16.2323 8.69886 17.713 9.31306 18.8264 10.4278C19.9398 11.5425 20.5526 13.0241 20.5521 14.5999C20.5507 17.8516 17.9053 20.4972 14.6548 20.4972ZM17.8896 16.0804C17.7123 15.9917 16.8407 15.5629 16.6781 15.5037C16.5158 15.4445 16.3974 15.415 16.2794 15.5924C16.1611 15.7699 15.8214 16.1692 15.7179 16.2875C15.6145 16.4058 15.5112 16.4207 15.3338 16.3319C15.1565 16.2432 14.5853 16.0559 13.9081 15.4519C13.3811 14.9818 13.0254 14.4013 12.9219 14.2239C12.8186 14.0463 12.921 13.9596 12.9997 13.8621C13.1916 13.6237 13.3838 13.3739 13.4428 13.2556C13.502 13.1373 13.4724 13.0337 13.428 12.945C13.3838 12.8563 13.0292 11.9837 12.8815 11.6286C12.7375 11.2831 12.5914 11.3297 12.4826 11.3243C12.3793 11.3192 12.261 11.3181 12.1428 11.3181C12.0246 11.3181 11.8325 11.3624 11.67 11.54C11.5075 11.7175 11.0496 12.1464 11.0496 13.019C11.0496 13.8916 11.6848 14.7346 11.7734 14.8529C11.8621 14.9713 13.0236 16.7619 14.802 17.5298C15.225 17.7126 15.5551 17.8216 15.8127 17.9033C16.2374 18.0382 16.6238 18.0192 16.9293 17.9736C17.27 17.9226 17.9781 17.5446 18.126 17.1306C18.2737 16.7164 18.2737 16.3615 18.2293 16.2875C18.1851 16.2135 18.0668 16.1692 17.8896 16.0804Z" fill="white"/>
+							<a
+								class="whats-app-hover"
+								href="https://web.whatsapp.com/"
+								target="_blank"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 30 30"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle cx="15" cy="15" r="15" fill="#2DB475" />
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M19.6738 9.58083C18.3342 8.2397 16.5527 7.50079 14.6548 7.5C10.744 7.5 7.56109 10.6828 7.55951 14.5947C7.55899 15.8452 7.88567 17.0659 8.5066 18.1419L7.5 21.8185L11.2613 20.8318C12.2977 21.3972 13.4645 21.6951 14.6519 21.6955H14.6549C18.5653 21.6955 21.7485 18.5124 21.75 14.6004C21.7508 12.7044 21.0135 10.9219 19.6738 9.58083ZM14.6548 20.4972H14.6524C13.5942 20.4968 12.5564 20.2124 11.6508 19.6752L11.4356 19.5473L9.20356 20.1329L9.79932 17.9567L9.65905 17.7336C9.06871 16.7946 8.75698 15.7094 8.7575 14.5951C8.75873 11.3436 11.4043 8.69834 14.6572 8.69834C16.2323 8.69886 17.713 9.31306 18.8264 10.4278C19.9398 11.5425 20.5526 13.0241 20.5521 14.5999C20.5507 17.8516 17.9053 20.4972 14.6548 20.4972ZM17.8896 16.0804C17.7123 15.9917 16.8407 15.5629 16.6781 15.5037C16.5158 15.4445 16.3974 15.415 16.2794 15.5924C16.1611 15.7699 15.8214 16.1692 15.7179 16.2875C15.6145 16.4058 15.5112 16.4207 15.3338 16.3319C15.1565 16.2432 14.5853 16.0559 13.9081 15.4519C13.3811 14.9818 13.0254 14.4013 12.9219 14.2239C12.8186 14.0463 12.921 13.9596 12.9997 13.8621C13.1916 13.6237 13.3838 13.3739 13.4428 13.2556C13.502 13.1373 13.4724 13.0337 13.428 12.945C13.3838 12.8563 13.0292 11.9837 12.8815 11.6286C12.7375 11.2831 12.5914 11.3297 12.4826 11.3243C12.3793 11.3192 12.261 11.3181 12.1428 11.3181C12.0246 11.3181 11.8325 11.3624 11.67 11.54C11.5075 11.7175 11.0496 12.1464 11.0496 13.019C11.0496 13.8916 11.6848 14.7346 11.7734 14.8529C11.8621 14.9713 13.0236 16.7619 14.802 17.5298C15.225 17.7126 15.5551 17.8216 15.8127 17.9033C16.2374 18.0382 16.6238 18.0192 16.9293 17.9736C17.27 17.9226 17.9781 17.5446 18.126 17.1306C18.2737 16.7164 18.2737 16.3615 18.2293 16.2875C18.1851 16.2135 18.0668 16.1692 17.8896 16.0804Z"
+										fill="white"
+									/>
 								</svg>
 							</a>
 						</div>
@@ -71,7 +143,9 @@
 						<address>
 							<a class="number" href="tel:+74956391563">+375 (33) 639-15-63</a>
 							<span class="street">г. Минск, ул. Замковая, д.10</span>
-							<a class="mail" href="mailto:urist.mos.help@yandex.ru">urist.mos.help@yandex.ru</a>
+							<a class="mail" href="mailto:urist.mos.help@yandex.ru"
+								>urist.mos.help@yandex.ru</a
+							>
 						</address>
 					</li>
 				</ul>
@@ -81,131 +155,249 @@
 			<section class="container">
 				<div class="content">
 					<h1 class="content__title">
-						Получите анализ и процент успешности дела в Арбитражном суде<br> уже сейчас!
+						Получите анализ и процент успешности дела в Арбитражном суде<br />
+						уже сейчас!
 					</h1>
+					<img class="bg-adaptive" src="./images/bg-adaptive.jpg" alt="" />
 					<h5 class="content__subtitle">
-						Ответьте на <span class="green__text">6 вопросов</span> в квизе и мы подготовим:
+						Ответьте на <span class="green__text">6 вопросов</span> в квизе и мы
+						подготовим:
 					</h5>
 					<ul class="content__list">
 						<li class="content__list__item">
-							<img src="/images/marker.svg" class="marker"><span class="list__first green__text">01</span>
+							<img src="/images/marker.svg" class="marker" /><span
+								class="list__first green__text"
+								>01</span
+							>
 							<p class="content__list__text">
-								Юридическое заключение,<br> 
-								включающее в себя анализ и оценку<br> ситуации по Арбитражному делу
+								Юридическое заключение,<br />
+								включающее в себя анализ и оценку<br />
+								ситуации по Арбитражному делу
 							</p>
 						</li>
 						<li class="content__list__item">
-							<img src="/images/marker.svg" class="marker"><span class="list__second green__text">02</span>
+							<img src="/images/marker.svg" class="marker" /><span
+								class="list__second green__text"
+								>02</span
+							>
 							<p class="content__list__text">
-								Стратегию решения и возможные исходы дела,<br>
-								включающие в себя услуги медиатора или<br> адвоката, учитывая ваши потребности
-								
+								Стратегию решения и возможные исходы дела,<br />
+								включающие в себя услуги медиатора или<br />
+								адвоката, учитывая ваши потребности
 							</p>
-							
 						</li>
 						<li class="content__list__item">
-							<img src="/images/marker.svg" class="marker" style="top:32px"><span class="list__second green__text" style="top:34px">03</span>
+							<img
+								src="/images/marker.svg"
+								class="marker"
+								style="top: 32px"
+							/><span class="list__second green__text" style="top: 34px"
+								>03</span
+							>
 							<p class="content__list__text">
-								Проведем расчёт стоимости наших услуг<br>
-							  и основных расходов по делу
+								Проведем расчёт стоимости наших услуг<br />
+								и основных расходов по делу
 							</p>
 						</li>
 					</ul>
-				</div>
-				<a href="quiz.html">
-					<button class="btn btn-hover">
+					<a href="quiz.html">
+						<button class="btn btn-hover">
 							<figure>
-								<img src="/images/arrow.svg">
+								<img src="/images/arrow.svg" />
 							</figure>
-							<p>Ответить<br> на вопросы</p>
-					</button>
-				</a>
+							<p>
+								Ответить<br />
+								на вопросы
+							</p>
+						</button>
+					</a>
+				</div>
 			</section>
-			
+
 			<section id="contacts" class="contacts">
 				<div class="contacts__container">
 					<div class="contacts__info">
-						<h1 class="contacts__info_title">Контакты</h1>	
+						<h1 class="contacts__info_title">Контакты</h1>
 						<address class="contacts__info_numbers">
 							<span>Телефоны:</span>
-							<a class="number" href="tel:+375336391563"><img src="/images/telephone_logo.svg" alt="">
+							<a class="number" href="tel:+375336391563"
+								><img src="/images/telephone_logo.svg" alt="" />
 								+375 (33) 39-15-63
 							</a>
-							<a class="number" href="tel:+375298384797"><img src="/images/telephone_logo.svg" alt="">
+							<a class="number" href="tel:+375298384797"
+								><img src="/images/telephone_logo.svg" alt="" />
 								+375 (29) 838-47-97
 							</a>
 						</address>
 						<div class="contacts__info_address">
-								<span>Адрес:</span>
-								<br>
-								<p>
-									<b>г. Минск, ул. Замковая, д. 10, оф. 96</b> вход со стороны улицы, коричневое крыльцо с вывеской “Юридическая консультация”
-								</p>
+							<span>Адрес:</span>
+							<br />
+							<p>
+								<b>г. Минск, ул. Замковая, д. 10, оф. 96</b> вход со стороны
+								улицы, коричневое крыльцо с вывеской “Юридическая консультация”
+							</p>
 						</div>
 						<div class="contacts__info_metro-way">
 							<ul class="contacts__info_metro-way_list">
-								<li class="contacts__info_metro-way_list-item metro-way_list-item-green">
+								<li
+									class="contacts__info_metro-way_list-item metro-way_list-item-green"
+								>
 									Борисовский тракт
 								</li>
-								<li class="contacts__info_metro-way_list-item metro-way_list-item-orange">
+								<li
+									class="contacts__info_metro-way_list-item metro-way_list-item-orange"
+								>
 									Октябрьская
 								</li>
-								<li class="contacts__info_metro-way_list-item metro-way_list-item-gray">
+								<li
+									class="contacts__info_metro-way_list-item metro-way_list-item-gray"
+								>
 									Немига
 								</li>
-								<li class="contacts__info_metro-way_list-item metro-way_list-item-exit">
+								<li
+									class="contacts__info_metro-way_list-item metro-way_list-item-exit"
+								>
 									ул. Замковая
 								</li>
 							</ul>
 						</div>
 						<address class="contacts__info_email">
 							<span>Email:</span>
-							<a class="mail" href="mailto:urist.mos.help@yandex.ru">urist.mos.help@yandex.ru</a>
+							<a class="mail" href="mailto:urist.mos.help@yandex.ru"
+								>urist.mos.help@yandex.ru</a
+							>
 						</address>
 						<div class="contacts__info_call-with-me">
 							<div class="contacts__info_call-with-me__tg">
-								<a class="telegram-hover" href="#">
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="15" cy="15" r="15" fill="#168FC0"/>
-									<g clip-path="url(#clip0_0_902)">
-									<mask id="mask0_0_902" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="7" width="16" height="16">
-									<path d="M6.74976 7.5H21.7498V22.5H6.74976V7.5Z" fill="white"/>
-									</mask>
-									<g mask="url(#mask0_0_902)">
-									<path d="M20.3622 9.1732L7.66541 14.02C7.02137 14.2658 7.03198 14.6379 7.68887 14.8468L10.5414 15.663L12.0407 19.9508C12.2683 20.6015 12.8693 20.7518 13.3764 20.2849L15.284 18.5285L17.9648 20.6871C18.5095 21.1096 19.067 20.9024 19.2039 20.2269L21.2842 9.95455C21.4211 9.27902 21.0062 8.92746 20.3622 9.1732Z" stroke="white" stroke-width="0.878906" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-									<path d="M10.5798 15.6438L18.2207 11.7402L13.3201 16.9475L12.4531 20.459" stroke="white" stroke-width="0.878906" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-									<path d="M13.3435 16.9652L17.9419 20.668" stroke="white" stroke-width="0.878906" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-									</g>
-									</g>
-									<defs>
-									<clipPath id="clip0_0_902">
-									<rect width="15" height="15" fill="white" transform="translate(6.75 7.5)"/>
-									</clipPath>
-									</defs>
+								<a
+									class="telegram-hover"
+									href="https://t.me/TLGRM_belstuby"
+									target="_blank"
+								>
+									<svg
+										width="30"
+										height="30"
+										viewBox="0 0 30 30"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<circle cx="15" cy="15" r="15" fill="#168FC0" />
+										<g clip-path="url(#clip0_0_902)">
+											<mask
+												id="mask0_0_902"
+												style="mask-type: luminance"
+												maskUnits="userSpaceOnUse"
+												x="6"
+												y="7"
+												width="16"
+												height="16"
+											>
+												<path
+													d="M6.74976 7.5H21.7498V22.5H6.74976V7.5Z"
+													fill="white"
+												/>
+											</mask>
+											<g mask="url(#mask0_0_902)">
+												<path
+													d="M20.3622 9.1732L7.66541 14.02C7.02137 14.2658 7.03198 14.6379 7.68887 14.8468L10.5414 15.663L12.0407 19.9508C12.2683 20.6015 12.8693 20.7518 13.3764 20.2849L15.284 18.5285L17.9648 20.6871C18.5095 21.1096 19.067 20.9024 19.2039 20.2269L21.2842 9.95455C21.4211 9.27902 21.0062 8.92746 20.3622 9.1732Z"
+													stroke="white"
+													stroke-width="0.878906"
+													stroke-miterlimit="10"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M10.5798 15.6438L18.2207 11.7402L13.3201 16.9475L12.4531 20.459"
+													stroke="white"
+													stroke-width="0.878906"
+													stroke-miterlimit="10"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M13.3435 16.9652L17.9419 20.668"
+													stroke="white"
+													stroke-width="0.878906"
+													stroke-miterlimit="10"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+										</g>
+										<defs>
+											<clipPath id="clip0_0_902">
+												<rect
+													width="15"
+													height="15"
+													fill="white"
+													transform="translate(6.75 7.5)"
+												/>
+											</clipPath>
+										</defs>
 									</svg>
 								</a>
-								<a class="telegram-hover_text" href="#">
-										<span>Свяжитесь с нами в Telegram</span>
+								<a
+									class="telegram-hover_text"
+									href="https://t.me/TLGRM_belstuby"
+									target="_blank"
+								>
+									<span>Свяжитесь с нами в Telegram</span>
 								</a>
 							</div>
 							<div class="contacts__info_call-with-me__whatsapp">
-								<a class="whats-app-hover" href="">
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<circle cx="15" cy="15" r="15" fill="#2DB475"/>
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M19.6738 9.58083C18.3342 8.2397 16.5527 7.50079 14.6548 7.5C10.744 7.5 7.56109 10.6828 7.55951 14.5947C7.55899 15.8452 7.88567 17.0659 8.5066 18.1419L7.5 21.8185L11.2613 20.8318C12.2977 21.3972 13.4645 21.6951 14.6519 21.6955H14.6549C18.5653 21.6955 21.7485 18.5124 21.75 14.6004C21.7508 12.7044 21.0135 10.9219 19.6738 9.58083ZM14.6548 20.4972H14.6524C13.5942 20.4968 12.5564 20.2124 11.6508 19.6752L11.4356 19.5473L9.20356 20.1329L9.79932 17.9567L9.65905 17.7336C9.06871 16.7946 8.75698 15.7094 8.7575 14.5951C8.75873 11.3436 11.4043 8.69834 14.6572 8.69834C16.2323 8.69886 17.713 9.31306 18.8264 10.4278C19.9398 11.5425 20.5526 13.0241 20.5521 14.5999C20.5507 17.8516 17.9053 20.4972 14.6548 20.4972ZM17.8896 16.0804C17.7123 15.9917 16.8407 15.5629 16.6781 15.5037C16.5158 15.4445 16.3974 15.415 16.2794 15.5924C16.1611 15.7699 15.8214 16.1692 15.7179 16.2875C15.6145 16.4058 15.5112 16.4207 15.3338 16.3319C15.1565 16.2432 14.5853 16.0559 13.9081 15.4519C13.3811 14.9818 13.0254 14.4013 12.9219 14.2239C12.8186 14.0463 12.921 13.9596 12.9997 13.8621C13.1916 13.6237 13.3838 13.3739 13.4428 13.2556C13.502 13.1373 13.4724 13.0337 13.428 12.945C13.3838 12.8563 13.0292 11.9837 12.8815 11.6286C12.7375 11.2831 12.5914 11.3297 12.4826 11.3243C12.3793 11.3192 12.261 11.3181 12.1428 11.3181C12.0246 11.3181 11.8325 11.3624 11.67 11.54C11.5075 11.7175 11.0496 12.1464 11.0496 13.019C11.0496 13.8916 11.6848 14.7346 11.7734 14.8529C11.8621 14.9713 13.0236 16.7619 14.802 17.5298C15.225 17.7126 15.5551 17.8216 15.8127 17.9033C16.2374 18.0382 16.6238 18.0192 16.9293 17.9736C17.27 17.9226 17.9781 17.5446 18.126 17.1306C18.2737 16.7164 18.2737 16.3615 18.2293 16.2875C18.1851 16.2135 18.0668 16.1692 17.8896 16.0804Z" fill="white"/>
+								<a
+									class="whats-app-hover"
+									href="https://web.whatsapp.com/"
+									target="_blank"
+								>
+									<svg
+										width="30"
+										height="30"
+										viewBox="0 0 30 30"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<circle cx="15" cy="15" r="15" fill="#2DB475" />
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M19.6738 9.58083C18.3342 8.2397 16.5527 7.50079 14.6548 7.5C10.744 7.5 7.56109 10.6828 7.55951 14.5947C7.55899 15.8452 7.88567 17.0659 8.5066 18.1419L7.5 21.8185L11.2613 20.8318C12.2977 21.3972 13.4645 21.6951 14.6519 21.6955H14.6549C18.5653 21.6955 21.7485 18.5124 21.75 14.6004C21.7508 12.7044 21.0135 10.9219 19.6738 9.58083ZM14.6548 20.4972H14.6524C13.5942 20.4968 12.5564 20.2124 11.6508 19.6752L11.4356 19.5473L9.20356 20.1329L9.79932 17.9567L9.65905 17.7336C9.06871 16.7946 8.75698 15.7094 8.7575 14.5951C8.75873 11.3436 11.4043 8.69834 14.6572 8.69834C16.2323 8.69886 17.713 9.31306 18.8264 10.4278C19.9398 11.5425 20.5526 13.0241 20.5521 14.5999C20.5507 17.8516 17.9053 20.4972 14.6548 20.4972ZM17.8896 16.0804C17.7123 15.9917 16.8407 15.5629 16.6781 15.5037C16.5158 15.4445 16.3974 15.415 16.2794 15.5924C16.1611 15.7699 15.8214 16.1692 15.7179 16.2875C15.6145 16.4058 15.5112 16.4207 15.3338 16.3319C15.1565 16.2432 14.5853 16.0559 13.9081 15.4519C13.3811 14.9818 13.0254 14.4013 12.9219 14.2239C12.8186 14.0463 12.921 13.9596 12.9997 13.8621C13.1916 13.6237 13.3838 13.3739 13.4428 13.2556C13.502 13.1373 13.4724 13.0337 13.428 12.945C13.3838 12.8563 13.0292 11.9837 12.8815 11.6286C12.7375 11.2831 12.5914 11.3297 12.4826 11.3243C12.3793 11.3192 12.261 11.3181 12.1428 11.3181C12.0246 11.3181 11.8325 11.3624 11.67 11.54C11.5075 11.7175 11.0496 12.1464 11.0496 13.019C11.0496 13.8916 11.6848 14.7346 11.7734 14.8529C11.8621 14.9713 13.0236 16.7619 14.802 17.5298C15.225 17.7126 15.5551 17.8216 15.8127 17.9033C16.2374 18.0382 16.6238 18.0192 16.9293 17.9736C17.27 17.9226 17.9781 17.5446 18.126 17.1306C18.2737 16.7164 18.2737 16.3615 18.2293 16.2875C18.1851 16.2135 18.0668 16.1692 17.8896 16.0804Z"
+											fill="white"
+										/>
 									</svg>
 								</a>
-								<a class="whats-app-hover_text" href="#">
+								<a
+									class="whats-app-hover_text"
+									href="https://web.whatsapp.com/"
+									target="_blank"
+								>
 									Свяжитесь с нами в WhatsApp
 								</a>
 							</div>
 						</div>
 					</div>
 					<div class="contacts__map">
-						<img src="./images/place_tribunal_photo.jpg" alt="">
-						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b0b58cb18b2513bdede91338a245a156dfb18046d193e7bc371ff586e5b4ec9&amp;width=438&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+						<img src="./images/place_tribunal_photo.jpg" alt="" />
+						<div class="contacts__map_laptop-map">
+							<script
+								type="text/javascript"
+								charset="utf-8"
+								async
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b0b58cb18b2513bdede91338a245a156dfb18046d193e7bc371ff586e5b4ec9&amp;width=600&amp;height=240&amp;lang=ru_RU&amp;scroll=true"
+							></script>
+						</div>
+						<div class="contacts__map_mobile-map">
+							<script
+								type="text/javascript"
+								charset="utf-8"
+								async
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09ed262812ff831a3f1dda52b434efb1ab1a56716a75fac0df477bd629d338b6&amp;width=345&amp;height=240&amp;lang=ru_RU&amp;scroll=true"
+							></script>
+						</div>
+
 						<p>
-							ЗАО «Управление по развитию новых экономических форм производства»  ИНН: 5871251552
+							ЗАО «Управление по развитию новых экономических форм производства»
+							ИНН: 5871251552
 						</p>
 					</div>
 				</div>
