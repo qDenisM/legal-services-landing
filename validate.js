@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
 	let form = document.querySelector('.help_form__info')
+
 	form.addEventListener('submit', function (event) {
 		let telInput = document.getElementById('tel')
 		let emailInput = document.getElementById('email')
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		telValidate()
 		mailValidate()
-
+		
 		if (
 			!telInput.checkValidity() ||
 			!emailInput.checkValidity() ||
@@ -53,6 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		) {
 			commentInput.style.borderColor = 'red'
 			event.preventDefault()
+		}
+		else {
+			commentInput.style.borderColor = 'green'
 		}
 	})
 })

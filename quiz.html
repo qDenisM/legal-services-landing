@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Анкета</title>
 		<link rel="icon" href="https://polotnos.cdnbro.com/posts/0732688-notarius-klipart-55.jpg">
-		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/quiz.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +13,7 @@
 			rel="stylesheet"
 		/>
 		<script defer src="burger.js"></script>
+		<script defer src="questions.js"></script>
 	</head>
 	<body>
     <header class="header">
@@ -154,14 +154,15 @@
 				<div class="quiz__container">
 					<div class="quiz__progress-bar">
 						
-						<div class="quiz__gray-bar">
-						<div class="quiz__green-bar">
-							<span class="quiz__question-number">1/5</span>
+						<div class="quiz__gray-bar" id="gray-bar">
+						<div class="quiz__green-bar" id="green-bar">
+							<span class="quiz__question-number" id="question-number">1/5</span>
 						</div>
 						</div>
 					</div>
+					<!-- вопрос 1 -->
 					<h1 class="quiz__container_title">Статус вашего дела:</h1>
-					<form class="quiz__menu">
+					<form class="quiz__menu" id="question1">
 						<div class="quiz__menu_item">
 							<input class="quiz__menu_item__radio" type="radio" id="form" name="form"></input>
 							<label class="quiz__menu_item__answer" for="form">Только хотите подать в суд</label>
@@ -179,12 +180,73 @@
 							<label class="quiz__menu_item__answer" for="form3">На вас уже подали в суд</label>
 						</div>
 					</form>
-					<div class="quiz__buttons">
-						<button class="quiz__buttons_next" onclick="">Далее</button>
-						<button class="quiz__buttons_skip" onclick="">Пропустить</button>
+					<!-- вопрос 2 -->
+					<h1 class="quiz__container_title">Договор заключен между сторонами?</h1>
+					<form class="quiz__menu" id="question2">
+						<div class="quiz__menu_item">
+							<input class="quiz__menu_item__radio" type="radio" id="form4" name="form"></input>
+							<label class="quiz__menu_item__answer" for="form4">Да</label>
+						</div>
+						<div class="quiz__menu_item">
+							<input class="quiz__menu_item__radio" type="radio" id="form5" name="form"></input>
+							<label class="quiz__menu_item__answer" for="form5">Нет</label>
+						</div>
+						<div class="quiz__menu_item">
+							<input class="quiz__menu_item__radio" type="radio" id="form6" name="form"></input>
+							<label class="quiz__menu_item__answer" for="form6">Затрудняюсь ответить</label>
+						</div>
+					</form>
+					<!-- вопрос 3 -->
+					<h1 class="quiz__container_title">Напишите сумму задолженности</h1>
+					<form class="quiz__menu" id="question3">
+						<div class="quiz__menu_item" style="width: 300px;">
+							<label class="quiz__menu_item__answer1" for="form7">Сумма задолженности</label>
+							<input type="text" id="form7" name="form"></input>
+							<span class="quiz__menu_item__example">*Например 5000 руб.</span>
+						</div>
+					</form>
+					<!-- вопрос 4 -->
+					<h1 class="quiz__container_title">Ваша компания зарегистрирована в Минске или МО?</h1>
+					<form class="quiz__menu" id="question4">
+						<div class="quiz__menu_item">
+							<input class="quiz__menu_item__radio" type="radio" id="form8" name="form"></input>
+							<label class="quiz__menu_item__answer" for="form8">Минске</label>
+						</div>
+						<div class="quiz__menu_item">
+							<input class="quiz__menu_item__radio" type="radio" id="form9" name="form"></input>
+							<label class="quiz__menu_item__answer" for="form9">МО</label>
+						</div>
+						<div class="quiz__menu_item">
+							<input class="quiz__menu_item__radio" type="radio" id="form10" name="form"></input>
+							<label class="quiz__menu_item__answer" for="form10">Другой город</label>
+						</div>
+					</form>
+					<!-- вопрос 5 -->
+					<h1 class="quiz__container_title">Напишите ИНН вашей компании и контрагента</h1>
+					<form class="quiz__menu" id="question5">
+						<div class="quiz__menu_item question-5" style="width: 300px;">
+							<label class="quiz__menu_item__answer5" for="form11">ИНН компании</label>
+							<input type="text" id="form11" name="form"></input>
+							<label class="quiz__menu_item__answer5" for="form12">ИНН компании контрагента</label>
+							<input type="text" id="form12" name="form"></input>
+						</div>
+					</form>
+					<!-- связь -->
+					<h1 class="quiz__container_title" id="question-telephone">Укажите номер телефона</h1>
+					<form class="quiz__menu">
+						<div class="quiz__menu_item" style="width: 300px;">
+							<label class="help_form__info_desc" for="tel">Телефон:<br><input pattern="\+375 \(\d{2}\) \d{3}-\d{2}-\d{2}" id="tel" name="tel" type="tel" placeholder="+375 (___) ___-__-__" maxlength="19" onkeyup = "telValidate()" ></label>
+						</div>
+					</form>
+					<h1 class="quiz__container_title quiz__title_finish">Ответы приняты в обработку, мы свяжемся с вами в течение одного рабочего дня</h1>
+					<div class="quiz__buttons" >
+						<button class="quiz__buttons_back" onclick="" id="backButton"><img src="./images/back-btn.svg" alt=""></button>
+						<button class="quiz__buttons_next" onclick="" id="nextButton">Далее</button>
+						<button class="quiz__buttons_skip" onclick="" id="skipButton">Пропустить</button>
 					</div>
 				</div>
-				<div class="quiz__advantages">
+				
+				<div class="quiz__advantages" id="quiz-cards">
 					<div class="quiz__advantages_card">
 						<img src="./images/trader.svg" alt="">
 						<span>Опыт работы 30 лет</span>
@@ -200,5 +262,14 @@
 				</div>
 			</section>
 		</main>
+		<footer class="footer">
+			<div class="footer__urnefp">
+				<span>&copy; URNEFP Все права защищены</span>
+			</div>
+			<div class="footer__policy-personal-data">
+				<span>Политика обработки персональных данных компании «URNEFP»</span>
+			</div>
+		</footer>
+		
   </body>
 </html>
