@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<my_team__desc>
-		<my__team_cards class="my_team__card_founded">
-			<figure>
-				<img class="my_team__pict" src="/images/card_founded.svg" alt=""/>
-			</figure>
-			<p class="card_founded__text">
-                    Отдел по работе с предпринимателями
-				<br/> одной из первых компаний на рынке юридических услуг, 
-				<strong>основанной в 1993 г.</strong>
-			</p>
-		</my__team_cards>
-		<my__team_cards class="my_team__card_experience">
-			<figure>
-				<img class="my_team__pict" src="/images/card_experience.svg" alt=""/>
-			</figure>
-			<p class="card_experience__text">
-                    Сотрудники 
-				<strong>со стажем работы не менее 12 лет</strong> в области коммерческого права и арбитражных процессов
-                
-			</p>
-		</my__team_cards>
-		<my__team_cards class="my_team__card_higher_educ">
-			<figure>
-				<img class="my_team__pict" src="/images/card_higher_educ.svg" alt=""/>
-			</figure>
-			<p class="card_higher_educ__text">
-                    Специалисты, имеющие 
-				<strong>несколько высших образований</strong> и постоянно повышающие свою квалификацию
-                
-			</p>
-		</my__team_cards>
-		<my__team_cards class="my_team__card_relatives">
-			<figure>
-				<img class="my_team__pict" src="/images/card_relatives.svg" alt=""/>
-			</figure>
-			<p class="card_relatives__text">
-				<strong>Персональное отношение</strong> к каждому клиенту, как к своему родственнику
-                
-			</p>
-		</my__team_cards>
-		<my__team_cards class="my_team__card_issue">
-			<figure>
-				<img class="my_team__pict" src="/images/card_issue.svg" alt=""/>
-			</figure>
-			<p class="card_issue__text">
-                    Отзывчивые, ответственные сотрудники, 
-				<strong>видящие проблему клиента</strong> и его истинные желания
-                
-			</p>
-		</my__team_cards>
-		<my__team_cards class="my_team__card_turnkey_work">
-			<figure>
-				<img class="my_team__pict" src="/images/card_turnkey_work.svg" alt=""/>
-			</figure>
-			<p class="card_turnkey_work__text">
-                    Выполняем всю 
-				<strong>работу под ключ</strong> за разумные деньги
-                
-			</p>
-		</my__team_cards>
-	</my_team__desc>
+<my_team__desc>
+	<my__team_cards class="my_team__card_founded">
+		<figure>
+			<img class="my_team__pict" src="/images/card_founded.svg" alt=""/>
+		</figure>
+		<p class="card_founded__text">
+                   Отдел по работе с предпринимателями
+			<br/> одной из первых компаний на рынке юридических услуг, 
+			<strong>основанной в 1993 г.</strong>
+		</p>
+	</my__team_cards>
+	<my__team_cards class="my_team__card_experience">
+		<figure>
+			<img class="my_team__pict" src="/images/card_experience.svg" alt=""/>
+		</figure>
+		<p class="card_experience__text">
+                   Сотрудники 
+			<strong>со стажем работы не менее 12 лет</strong> в области коммерческого права и арбитражных процессов
+               
+		</p>
+	</my__team_cards>
+	<my__team_cards class="my_team__card_higher_educ">
+		<figure>
+			<img class="my_team__pict" src="/images/card_higher_educ.svg" alt=""/>
+		</figure>
+		<p class="card_higher_educ__text">
+                   Специалисты, имеющие 
+			<strong>несколько высших образований</strong> и постоянно повышающие свою квалификацию
+               
+		</p>
+	</my__team_cards>
+	<my__team_cards class="my_team__card_relatives">
+		<figure>
+			<img class="my_team__pict" src="/images/card_relatives.svg" alt=""/>
+		</figure>
+		<p class="card_relatives__text">
+			<strong>Персональное отношение</strong> к каждому клиенту, как к своему родственнику
+               
+		</p>
+	</my__team_cards>
+	<my__team_cards class="my_team__card_issue">
+		<figure>
+			<img class="my_team__pict" src="/images/card_issue.svg" alt=""/>
+		</figure>
+		<p class="card_issue__text">
+                   Отзывчивые, ответственные сотрудники, 
+			<strong>видящие проблему клиента</strong> и его истинные желания
+               
+		</p>
+	</my__team_cards>
+	<my__team_cards class="my_team__card_turnkey_work">
+		<figure>
+			<img class="my_team__pict" src="/images/card_turnkey_work.svg" alt=""/>
+		</figure>
+		<p class="card_turnkey_work__text">
+                   Выполняем всю 
+			<strong>работу под ключ</strong> за разумные деньги
+               
+		</p>
+	</my__team_cards>
+</my_team__desc>

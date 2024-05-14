@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		telValidate()
 		mailValidate()
-		
+
 		if (
 			!telInput.checkValidity() ||
 			!emailInput.checkValidity() ||
@@ -54,8 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		) {
 			commentInput.style.borderColor = 'red'
 			event.preventDefault()
-		}
-		else {
+		} else {
 			commentInput.style.borderColor = 'green'
 		}
 	})
